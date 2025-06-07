@@ -8,6 +8,11 @@
   font-weight: 500;
 }
 
+.font-anek-400 {
+  font-family: "Anek Latin", sans-serif;
+  font-weight: 400;
+}
+
 .outlined-text {
   color: #090d10;
   -webkit-text-stroke: 2px white;
