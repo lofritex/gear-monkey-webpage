@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="fonts.css" />
   </head>
+
   <body>
     <!-- navbar -->
 
-    <header
+    <!-- <header
       class="bg-url('./images/star.svg') fixed z-50 top-7 w-full text-white flex justify-center"
     >
       <navbar
@@ -40,12 +41,80 @@
         </ul>
         <button class="bg-[#07813C] rounded-[8.48px] px-4 py-2">Login</button>
       </navbar>
+    </header> -->
+
+    <header
+      class="bg-[url('./images/navbar-background.svg')] bg-cover fixed z-50 top-7 w-full text-white flex justify-center"
+    >
+      <nav
+        class="navbar w-full max-w-[90%] px-4 sm:px-10 py-6 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <img
+          src="./images/gearmonkey-logo.svg"
+          alt="Logo"
+          class="max-w-[100px] sm:max-w-[300px]"
+        />
+
+        <!-- Mobile menu button -->
+        <button
+          id="menuToggle"
+          class="sm:hidden flex items-center text-white focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <!-- Menu Links -->
+        <ul
+          id="menu"
+          class="hidden sm:flex flex-col sm:flex-row absolute sm:static top-full left-0 w-full sm:w-auto bg-[#000000dd] sm:bg-transparent text-white gap-6 sm:gap-10 items-center py-6 sm:py-0 z-40 transition-all duration-300"
+        >
+          <li><a href="#Lander" class="hover:underline">Home</a></li>
+          <li><a href="#Intro" class="hover:underline">Intro</a></li>
+          <li><a href="#About" class="hover:underline">About</a></li>
+          <li>
+            <a href="#Service-Partners" class="hover:underline"
+              >Service Partners</a
+            >
+          </li>
+          <li><a href="#Contact" class="hover:underline">Contact Us</a></li>
+          <li class="sm:hidden">
+            <a href="https://app.gearmonkey.in/login">
+              <button
+                class="bg-[#07813C] rounded-md px-4 py-2 w-full text-center"
+              >
+                Login
+              </button>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Desktop Login button -->
+        <a href="https://app.gearmonkey.in/login">
+          <button class="hidden sm:block bg-[#07813C] rounded-md px-4 py-2">
+            Login
+          </button>
+        </a>
+      </nav>
     </header>
 
     <!-- first section  -->
 
-    <section id="Lander" class="bg-green-500 min-h-screen w-full">
-      hello
+    <section
+      id="Lander"
+      class="bg-[url('./images/lander-background.png')] bg-center bg-no-repeat min-h-screen w-full flex items-center justify-center"
+    >
+      <img src="./images/car.png" alt=" " class="mt-32 md:mt-10" />
     </section>
 
     <!-- second section  -->
@@ -282,11 +351,25 @@
       class="bg-[#090D10] w-full text-white flex flex-col items-center py-5"
     >
       <p class="font-anek-400 text-center px-5">
-        Copyright © 2025 Gear Monkey - All Rights Reserved. Website developed by
-        Lofritex IT Solutions.
+        Copyright © 2025 Gear Monkey - All Rights Reserved.
+        <a href="https://lofritex.com/">
+          Website developed by Lofritex IT Solutions.
+        </a>
       </p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleBtn = document.getElementById("menuToggle");
+        const menu = document.getElementById("menu");
+
+        if (toggleBtn && menu) {
+          toggleBtn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+          });
+        }
+      });
+    </script>
   </body>
 </html>
