@@ -49,3 +49,25 @@
     transform: translateX(-50%);
   }
 }
+
+.navbar-bg {
+  background-image: url("./images/navbar-background.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom mobile menu styling */
+.mobile-menu-open {
+  max-height: 400px;
+  opacity: 1;
+}
+
+.mobile-menu-closed {
+  max-height: 0;
+  opacity: 0;
+}
