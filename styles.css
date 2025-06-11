@@ -50,27 +50,13 @@
   }
 }
 
-@media (max-width: 768px) {
-  .navbar-bg {
-    background-size: cover;
-  }
-}
-
-.navbar-bg {
-  /* background-image: url("./images/navbar-background.svg"); */
-  background-size: "10px" 100%; /* Stretch to exactly match nav size */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-origin: border-box;
-}
-
 .menu-transition {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Custom mobile menu styling */
 .mobile-menu-open {
-  max-height: 400px;
+  max-height: 100svh;
   opacity: 1;
 }
 
