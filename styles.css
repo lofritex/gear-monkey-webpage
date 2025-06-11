@@ -50,11 +50,18 @@
   }
 }
 
+@media (max-width: 768px) {
+  .navbar-bg {
+    background-size: cover;
+  }
+}
+
 .navbar-bg {
-  background-image: url("./images/navbar-background.svg");
-  background-size: auto;
+  /* background-image: url("./images/navbar-background.svg"); */
+  background-size: "10px" 100%; /* Stretch to exactly match nav size */
   background-repeat: no-repeat;
   background-position: center;
+  background-origin: border-box;
 }
 
 .menu-transition {
