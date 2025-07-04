@@ -1,5 +1,5 @@
 import Button from "@/components/ui/Button";
-import GearMonkeyLogo from "@/assets/images/gear-monkey-logo.svg";
+import GearMonkeyLogo from "@/assets/images/gear-monkey-logo.png";
 import { Link } from "react-router-dom";
 
 const useStyles = () => ({

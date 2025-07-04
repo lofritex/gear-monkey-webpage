@@ -1,4 +1,4 @@
-import GearMonkeyLogo from "@/assets/images/gear-monkey-logo.svg";
+import GearMonkeyLogo from "@/assets/images/gear-monkey-logo.png";
 import Button from "@/components/ui/Button";
 export default function Footer() {
   return (
