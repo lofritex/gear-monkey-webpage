@@ -1,5 +1,5 @@
 import LanderCar from "@/assets/images/lander-car.png";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -11,15 +11,18 @@ export default function LanderSection() {
   const rightTextRef = useRef<HTMLHeadingElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
   const dividerRef = useRef<HTMLDivElement>(null);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   useGSAP(
     () => {
+      if (!imageLoaded) return; // Don't run animation until image is loaded
       // Timeline for coordinated animations
       const tl = gsap.timeline();
 
       // Initial state - set elements to their starting positions
       gsap.set(imageRef.current, {
         width: "0px", // Start with no width
+        height: "250px",
       });
       gsap.set(dividerRef.current, {
         width: "0px", // Start with no width
@@ -69,7 +72,7 @@ export default function LanderSection() {
           0,
         ); // Start at time 0
     },
-    { scope: container },
+    { scope: container, dependencies: [imageLoaded] },
   );
 
   return (
@@ -79,7 +82,12 @@ export default function LanderSection() {
     >
       <div className="flex items-center justify-center text-9xl lg:text-[230px]">
         <h1>IGN</h1>
-        <img ref={imageRef} src={LanderCar} className="lander-car h-[250px]" />
+        <img
+          ref={imageRef}
+          src={LanderCar}
+          onLoad={() => setImageLoaded(true)}
+          className="lander-car h-[250px]"
+        />
         <h1>ITE</h1>
       </div>
       <div
