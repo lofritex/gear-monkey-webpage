@@ -13,6 +13,8 @@ export default function LanderSection() {
   const dividerRef = useRef<HTMLDivElement>(null);
   const [imageLoaded, setImageLoaded] = useState(false);
 
+  let heightValue = window.innerWidth < 768 ? "100px" : "250px";
+
   useGSAP(
     () => {
       if (!imageLoaded) return; // Don't run animation until image is loaded
@@ -22,7 +24,7 @@ export default function LanderSection() {
       // Initial state - set elements to their starting positions
       gsap.set(imageRef.current, {
         width: "0px", // Start with no width
-        height: "250px",
+        height: heightValue,
       });
       gsap.set(dividerRef.current, {
         width: "0px", // Start with no width
@@ -80,13 +82,13 @@ export default function LanderSection() {
       ref={container}
       className="h-section flex w-full flex-col items-center justify-center gap-5"
     >
-      <div className="flex items-center justify-center text-9xl lg:text-[230px]">
+      <div className="flex max-w-[200px] items-center justify-center text-7xl lg:max-w-full lg:text-[230px]">
         <h1>IGN</h1>
         <img
           ref={imageRef}
           src={LanderCar}
           onLoad={() => setImageLoaded(true)}
-          className="lander-car h-[250px]"
+          className="lander-car"
         />
         <h1>ITE</h1>
       </div>

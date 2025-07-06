@@ -19,11 +19,11 @@ export default function PartnersSection() {
         </div>
       </div>
 
-      <div className="bg-primary mt-40 mb-20 flex flex-col items-center justify-between gap-5 rounded-4xl px-10 py-20 text-center text-white md:flex-row md:text-left lg:rounded-[150px]">
-        <img src={GearMonkeySymbol} alt="" className="px-20" />
+      <div className="bg-primary mt-20 mb-10 flex flex-col items-center justify-between gap-5 rounded-[75px] px-10 py-8 text-center text-white md:flex-row md:text-left lg:mt-40 lg:mb-20 lg:rounded-[150px] lg:py-20">
+        <img src={GearMonkeySymbol} className="max-h-10 px-20 lg:max-h-full" />
         <div className="flex flex-col items-center gap-5 md:items-start">
-          <h3 className="text-5xl lg:text-7xl">GEAR UP NOW</h3>
-          <p className="font-poppins max-w-[600px]">
+          <h3 className="text-3xl lg:text-7xl">GEAR UP NOW</h3>
+          <p className="font-poppins max-w-[600px] text-sm lg:text-lg">
             Questions about growing your business? GearMonkey's smart financial
             tools are here to help—cash flow, operations, and more.
           </p>
