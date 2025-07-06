@@ -18,7 +18,7 @@ export default function SmartSolutionsSection() {
         </h4>
       </div>
       <div className="relative flex w-screen max-w-screen-xl flex-col items-center">
-        <div className="flex w-full max-w-2/3 flex-col justify-center gap-20 px-3 py-10 md:max-w-full md:flex-row md:px-7 lg:py-32">
+        <div className="flex w-full flex-col justify-center gap-20 px-4 py-10 sm:max-w-3/4 md:max-w-full md:flex-row md:px-7 lg:py-32">
           <Card className="relative h-[350px] w-[250px] self-start">
             <FeaturesCardChild
               title="FULLY AUTOMATED SETTLEMENT TOOL"
