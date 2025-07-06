@@ -28,9 +28,9 @@ export default function SmartSolutionsSection() {
           </Card>
           <Card className="relative h-[350px] w-[250px] self-end">
             <FeaturesCardChild
-              title="SERVICE NOW PAY LATER"
+              title="TO BE FILLED SOMETHING"
               icon={SnplPic}
-              description="Gear Monkey's Service Now, Pay Later offers instant, interest-free EMIs—quick approvals for customers, upfront payments for garages."
+              description="lorem ipsum Later offers instant, interest-free EMIs—quick approvals for customers, upfront payments for garages."
             />
           </Card>
           <Card className="relative h-[350px] w-[250px] self-start">
