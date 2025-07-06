@@ -43,7 +43,7 @@ export default function SmartSolutionsSection() {
         </div>
         <img
           src={SectionBackgroundImage}
-          className="invisible absolute bottom-0 -z-50 md:visible"
+          className="invisible absolute bottom-0 z-0 md:visible"
         />
         <img
           src={SectionBackgroundMobile}
