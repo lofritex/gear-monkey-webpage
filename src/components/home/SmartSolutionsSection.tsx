@@ -47,7 +47,7 @@ export default function SmartSolutionsSection() {
         />
         <img
           src={SectionBackgroundMobile}
-          className="absolute top-0 bottom-0 left-0 -z-50 my-auto w-[200px] md:hidden"
+          className="absolute top-0 bottom-0 left-0 z-0 my-auto w-[200px] md:hidden"
         />
       </div>
     </section>
