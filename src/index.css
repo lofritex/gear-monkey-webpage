@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 body {
-  background-color: #eef4ee;
   font-family: "Bebas Neue", sans-serif;
 }
 
@@ -21,9 +20,8 @@ body {
 }
 
 .background-gradient-primary {
-
-background: linear-gradient(180deg, #094d28 12.17%, #18230f 100%);
-} 
+  background: linear-gradient(180deg, #094d28 12.17%, #18230f 100%);
+}
 @font-face {
   font-family: "Bebas Neue";
   src: url("/src/assets/fonts/BebasNeue-Regular.ttf") format("truetype");
