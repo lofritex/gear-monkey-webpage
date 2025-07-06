@@ -23,7 +23,7 @@ export default function Footer() {
           />
           <div className="flex h-full w-full flex-col items-end justify-end py-4 lg:px-20 lg:py-10">
             <h6 className="font-poppins">support@gearmonkey.in</h6>
-            <h6>98745 12345</h6>
+            <h6>99999 99999</h6>
             <Button label="CONTACT US" className={"mt-5 w-30 lg:w-60"} />
           </div>
         </div>
